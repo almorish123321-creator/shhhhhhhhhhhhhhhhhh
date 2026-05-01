@@ -1,0 +1,15 @@
+services:
+  - type: worker
+    name: telegram-bot
+    env: python
+    buildCommand: "pip install -r bot/requirements.txt"
+    startCommand: "python bot/bot_updated.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_USER_ID
+        sync: false
+      - key: API_BASE_URL
+        value: "https://your-render-app-url.onrender.com" # Replace with your actual Render app URL if you have a web service
+      - key: API_ENDPOINT
+        value: "/api/add_leave.php"
