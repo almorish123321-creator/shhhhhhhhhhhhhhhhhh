@@ -1,7 +1,7 @@
 # Configuration file for Seha Sick Leave Bot - Updated Version
 
-BOT_TOKEN = '8146069383:AAGaiNYOM22xQVp2PJ6Zv9nZnbo1EThjlSY'
-ADMIN_USER_ID = '7059256157'
+BOT_TOKEN = '8713124620:AAEsMisdIC_yqN70gIhEKkP0KjYSlOyxe4E'
+ADMIN_USER_ID = '7853478744'
 
 # API Settings
 API_BASE_URL = 'https://80-iayzosfpiazlzday7ujjn-d2b18cd3.manusvm.computer' # يمكن تغييرها حسب عنوان الخادم
