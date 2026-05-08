@@ -1,23 +1,8 @@
 {
   "$schema": "https://railway.com/railway.schema.json",
-  "services": {
-    "seha-website": {
-      "source": {
-        "root": "website"
-      },
-      "build": {
-        "builder": "DOCKERFILE",
-        "dockerfilePath": "Dockerfile"
-      }
-    },
-    "seha-telegram-bot": {
-      "source": {
-        "root": "bot"
-      },
-      "build": {
-        "builder": "DOCKERFILE",
-        "dockerfilePath": "Dockerfile"
-      }
-    }
+  "build": {
+    "builder": "DOCKERFILE",
+    "dockerfilePath": "bot/Dockerfile",
+    "dockerfileContext": "bot"
   }
 }
