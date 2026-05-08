@@ -1,23 +1,23 @@
 {
-  "build": {
-    "builder": "NIXPACKS"
-  },
-  "deployments": [
-    {
-      "name": "seha-website",
-      "root": "website",
-      "build": {
-        "builder": "NIXPACKS"
+  "$schema": "https://railway.com/railway.schema.json",
+  "services": {
+    "seha-website": {
+      "source": {
+        "root": "website"
       },
-      "start": "nginx -g \"daemon off;\""
+      "build": {
+        "builder": "DOCKERFILE",
+        "dockerfilePath": "Dockerfile"
+      }
     },
-    {
-      "name": "seha-telegram-bot",
-      "root": "bot",
-      "build": {
-        "builder": "NIXPACKS"
+    "seha-telegram-bot": {
+      "source": {
+        "root": "bot"
       },
-      "start": "python bot_updated.py"
+      "build": {
+        "builder": "DOCKERFILE",
+        "dockerfilePath": "Dockerfile"
+      }
     }
-  ]
+  }
 }
