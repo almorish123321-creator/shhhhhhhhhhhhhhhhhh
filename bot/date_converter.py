@@ -149,5 +149,4 @@ if __name__ == "__main__":
     processed = converter.process_dates("20-09-2025", "21-09-2025")
     for key, value in processed.items():
         print(f"{key}: {value}")
-        hijri-converter
-
+        
