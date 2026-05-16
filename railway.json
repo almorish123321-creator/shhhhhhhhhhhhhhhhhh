@@ -1,8 +1,23 @@
 {
-  "$schema": "https://railway.com/railway.schema.json",
   "build": {
-    "builder": "DOCKERFILE",
-    "dockerfilePath": "bot/Dockerfile",
-    "dockerfileContext": "bot"
-  }
+    "builder": "NIXPACKS"
+  },
+  "deployments": [
+    {
+      "name": "seha-website",
+      "root": "website",
+      "build": {
+        "builder": "NIXPACKS"
+      },
+      "start": "nginx -g \"daemon off;\""
+    },
+    {
+      "name": "seha-telegram-bot",
+      "root": "bot",
+      "build": {
+        "builder": "NIXPACKS"
+      },
+      "start": "python bot_updated.py"
+    }
+  ]
 }
