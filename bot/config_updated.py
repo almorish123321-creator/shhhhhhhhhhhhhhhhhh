@@ -32,4 +32,4 @@ QR_URL = 'https://www.seha.sa/#/inquiries/slenquiry'
 # PDF settings
 PDF_WIDTH = 297  # mm
 PDF_HEIGHT = 419  # mm
-
+hijri-converter
