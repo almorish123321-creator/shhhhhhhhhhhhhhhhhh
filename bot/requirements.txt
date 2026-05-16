@@ -5,3 +5,4 @@ qrcode==8.2
 arabic-reshaper==3.0.0
 reportlab==4.4.2
 requests==2.31.0
+hijri-converter
